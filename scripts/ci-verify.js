@@ -37,7 +37,8 @@ try {
 }
 
 // 3) Link safety - no insecure http:// links (allow spec namespaces)
-const allow = /^http:\/\/(www\.w3\.org|schema\.org|openid\.net|ns\.adobe\.com)/;
+// XML/spec namespace URIs (identifiers, not fetchable links) are allowed.
+const allow = /^http:\/\/(www\.w3\.org|schema\.org|openid\.net|ns\.adobe\.com|www\.sitemaps\.org)/;
 const skillsDir = path.join(ROOT, "skills");
 let insecure = 0;
 for (const slug of fs.readdirSync(skillsDir)) {
