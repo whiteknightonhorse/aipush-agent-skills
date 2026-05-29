@@ -10,7 +10,6 @@ This repository publishes **machine-readable skills** (Markdown instructions) th
 |-------|------|--------------------|
 | Secret scanning | gitleaks | No credentials, tokens, or keys are ever committed |
 | Static analysis | Semgrep (`p/default`, `p/secrets`) | No insecure patterns or leaked secrets in scripts |
-| Supply-chain posture | OpenSSF Scorecard | Repository follows security best practices |
 | Content integrity | SHA-256 manifest check | Every `SKILL.md` matches the digest published in `index.json` |
 | Deterministic index | `generate-index.js` reproducibility | `index.json` cannot drift from the actual skill files |
 | Link safety | http(s) link audit | All external links use HTTPS |

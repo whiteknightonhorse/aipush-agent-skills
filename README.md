@@ -4,8 +4,7 @@
 
 [![security](https://github.com/whiteknightonhorse/aipush-agent-skills/actions/workflows/security.yml/badge.svg)](https://github.com/whiteknightonhorse/aipush-agent-skills/actions/workflows/security.yml)
 [![integrity](https://github.com/whiteknightonhorse/aipush-agent-skills/actions/workflows/integrity.yml/badge.svg)](https://github.com/whiteknightonhorse/aipush-agent-skills/actions/workflows/integrity.yml)
-[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/whiteknightonhorse/aipush-agent-skills/badge)](https://securityscorecards.dev/viewer/?uri=github.com/whiteknightonhorse/aipush-agent-skills)
-[![secrets: gitleaks](https://img.shields.io/badge/secrets-scanned%20by%20gitleaks-brightgreen)](https://github.com/gitleaks/gitleaks)
+[![secrets: gitleaks](https://img.shields.io/badge/secrets-gitleaks-brightgreen)](https://github.com/gitleaks/gitleaks)
 [![SAST: Semgrep](https://img.shields.io/badge/SAST-Semgrep-2596be)](https://semgrep.dev)
 [![license: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![skills](https://img.shields.io/badge/skills-25-df8e1d)](index.json)
@@ -36,13 +35,12 @@ Point your AI coding agent (Cursor, Claude Code, Copilot) at a skill URL, or pas
 
 These skills are documentation, not executables — but we treat the catalog as a supply-chain artifact and verify it on **every push, PR, and weekly**:
 
-- 🔑 **gitleaks** — secret scanning (no keys/tokens ever)
-- 🔍 **Semgrep** — static analysis of the build scripts
-- 🛡️ **Trivy** + **OpenSSF Scorecard** — vulnerability + supply-chain posture
-- 🧾 **SHA-256 integrity** — every `SKILL.md` matches the digest in `index.json`
-- ♻️ **deterministic index** — `index.json` cannot drift from the files
+- 🔑 **gitleaks** — secret scanning (no keys/tokens ever); a hard gate that blocks the build
+- 🔍 **Semgrep** — static analysis of the build/index scripts (`p/default` + `p/secrets`)
+- 🧾 **SHA-256 integrity** — every `SKILL.md` matches the digest published in `index.json`
+- ♻️ **deterministic index** — `index.json` cannot drift from the actual skill files
 - 🔗 **link safety** — all external links are HTTPS
-- 🚫 **payload safety** — no dangerous shell/script patterns in any skill
+- 🚫 **payload safety** — no dangerous shell/script patterns (`rm -rf /`, `curl | sh`, cookie theft, …) in any skill
 
 See [SECURITY.md](SECURITY.md) for details and how to verify a skill yourself.
 
