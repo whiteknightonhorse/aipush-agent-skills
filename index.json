@@ -1,0 +1,207 @@
+{
+  "$schema": "https://agentskills.io/schemas/index-v0.2.0.json",
+  "generator": "aipush-agent-skills",
+  "updated_at": null,
+  "skills": [
+    {
+      "name": "Publish ACP commerce discovery",
+      "slug": "acp",
+      "type": "agent-skill",
+      "description": "The Agentic Commerce Protocol lets agents discover your commerce API and create checkout sessions without bespoke integration.",
+      "url": "https://aipush.app/.well-known/agent-skills/acp/SKILL.md",
+      "sha256": "944b6215b4f624bdc0b7d6da51cfb5804c9e750b33b42ad95f447a967aa73446"
+    },
+    {
+      "name": "Publish an agent skills index",
+      "slug": "agent-skills",
+      "type": "agent-skill",
+      "description": "A skills index lets agents discover machine-readable instructions for working with your site — what they can do and how, with integrity hashes.",
+      "url": "https://aipush.app/.well-known/agent-skills/agent-skills/SKILL.md",
+      "sha256": "e6c8d520ff8ad8eed72f69c83dca69df880afc64be6ab027f3b6c469bd8c5bea"
+    },
+    {
+      "name": "Declare AI crawler rules in robots.txt",
+      "slug": "ai-bot-rules",
+      "type": "agent-skill",
+      "description": "AI assistants (ChatGPT, Claude, Perplexity, Gemini) crawl with named user-agents. Explicit rules let you control whether they may read and cite your content — silence means inconsistent behavior across providers.",
+      "url": "https://aipush.app/.well-known/agent-skills/ai-bot-rules/SKILL.md",
+      "sha256": "d35343707f18e8397819313519c02ba10cb141b94451a71fdf2776b3932bf0d1"
+    },
+    {
+      "name": "Structure content as answer units",
+      "slug": "answer-units",
+      "type": "agent-skill",
+      "description": "Question-style headings followed by concise, direct answers are the format AI engines quote most. Walls of prose are harder to extract and cite.",
+      "url": "https://aipush.app/.well-known/agent-skills/answer-units/SKILL.md",
+      "sha256": "6f3b6e366e9e95d950e591b91f68b18ec6d7803001896a2e5e3fda924b316450"
+    },
+    {
+      "name": "Publish an API catalog (RFC 9727)",
+      "slug": "api-catalog",
+      "type": "agent-skill",
+      "description": "An API catalog lets agents find your service description (OpenAPI), documentation, and status endpoints programmatically — the entry point for automated integration.",
+      "url": "https://aipush.app/.well-known/agent-skills/api-catalog/SKILL.md",
+      "sha256": "fecc4f3b2e5358b7ae3ca29195cc5285e5d03d0e9f03e9db11f3b541c06f7d47"
+    },
+    {
+      "name": "Declare an absolute canonical URL",
+      "slug": "canonical",
+      "type": "agent-skill",
+      "description": "Canonical URLs consolidate duplicate/variant URLs so engines index and cite the single correct version — avoiding split signals and wrong citations.",
+      "url": "https://aipush.app/.well-known/agent-skills/canonical/SKILL.md",
+      "sha256": "1f881fe567b9220bc2fdfd6b6662175a2131f31ceea1e0448cefda47facdd169"
+    },
+    {
+      "name": "Declare AI usage with Content Signals",
+      "slug": "content-signals",
+      "type": "agent-skill",
+      "description": "Crawl permission and usage permission are different things. Content Signals let you state, per purpose, whether your content may be used for AI training, classic search, or AI answer input — independent of whether a bot may crawl.",
+      "url": "https://aipush.app/.well-known/agent-skills/content-signals/SKILL.md",
+      "sha256": "c2b2d5272d08d7deb0475b324840af915d1d0a336bd258d45de171b107612f68"
+    },
+    {
+      "name": "Mark up FAQs with FAQPage schema",
+      "slug": "faq-schema",
+      "type": "agent-skill",
+      "description": "FAQPage structured data is a strong, directly-citable answer-unit format — AI engines quote question/answer pairs verbatim.",
+      "url": "https://aipush.app/.well-known/agent-skills/faq-schema/SKILL.md",
+      "sha256": "2c17967debd93784b2402f75272e5342b6099b61ef1503401b7e3765dab4d1ef"
+    },
+    {
+      "name": "Use exactly one clear H1",
+      "slug": "h1-structure",
+      "type": "agent-skill",
+      "description": "A single descriptive <h1> tells crawlers and answer engines the page's primary topic. Zero or multiple H1s create ambiguity about what the page is about.",
+      "url": "https://aipush.app/.well-known/agent-skills/h1-structure/SKILL.md",
+      "sha256": "60102b8bd398b884d2cbf074bedaa6e09a0f3fca156ac42abfdeb8b2e561fc30"
+    },
+    {
+      "name": "Add JSON-LD structured data",
+      "slug": "json-ld",
+      "type": "agent-skill",
+      "description": "JSON-LD lets answer engines understand entities (organization, product, article, FAQ) precisely, increasing the odds of accurate citation and rich presentation.",
+      "url": "https://aipush.app/.well-known/agent-skills/json-ld/SKILL.md",
+      "sha256": "6e5964ff7e532f2a9e3e90f755b6ecf0dbb6f27c77b2b3380ec4fd3ed2fd492e"
+    },
+    {
+      "name": "Add Link response headers (RFC 8288)",
+      "slug": "link-headers",
+      "type": "agent-skill",
+      "description": "Link response headers let agents discover related resources (API catalog, docs, manifests) without parsing HTML — fast, language-agnostic discovery.",
+      "url": "https://aipush.app/.well-known/agent-skills/link-headers/SKILL.md",
+      "sha256": "323cb4d0e762db8e12e03f82856d6b08492ffbbdf4c4debe9435b74ee1bb473c"
+    },
+    {
+      "name": "Serve Markdown to agents on request",
+      "slug": "markdown-negotiation",
+      "type": "agent-skill",
+      "description": "Agents parse Markdown far more reliably than HTML, with fewer tokens and fewer extraction errors. Content-negotiating Markdown gives agents a clean read while browsers still get HTML.",
+      "url": "https://aipush.app/.well-known/agent-skills/markdown-negotiation/SKILL.md",
+      "sha256": "c89867453814cabbdb63111a8e9ff527274661d838bba0932c8be684b38761eb"
+    },
+    {
+      "name": "Publish an MCP Server Card",
+      "slug": "mcp-server-card",
+      "type": "agent-skill",
+      "description": "A Model Context Protocol (MCP) Server Card advertises your MCP server so agents can discover and connect to your tools without manual configuration.",
+      "url": "https://aipush.app/.well-known/agent-skills/mcp-server-card/SKILL.md",
+      "sha256": "034449ef22b8b78482a834fdf296702b1280f05d6e54248e5d294632a98703e8"
+    },
+    {
+      "name": "Provide title and meta description",
+      "slug": "meta-tags",
+      "type": "agent-skill",
+      "description": "<title> and <meta name=description> are used directly in search results and AI answer snippets. Missing or poorly sized values lead to truncated or auto-generated snippets you don't control.",
+      "url": "https://aipush.app/.well-known/agent-skills/meta-tags/SKILL.md",
+      "sha256": "6e4c42b042ad6debb8c1f5ce3580158e9be521f91f1bf937001ad22207655018"
+    },
+    {
+      "name": "Support MPP machine payments",
+      "slug": "mpp",
+      "type": "agent-skill",
+      "description": "The Machine Payment Protocol advertises payable operations in your OpenAPI so agents can discover prices and transact programmatically.",
+      "url": "https://aipush.app/.well-known/agent-skills/mpp/SKILL.md",
+      "sha256": "94eb0c919c60c571f62cbd6801ca9e81d19bdda77e4bf8c872a481f79d0b3b74"
+    },
+    {
+      "name": "Publish OAuth/OIDC discovery metadata",
+      "slug": "oauth-discovery",
+      "type": "agent-skill",
+      "description": "Discovery metadata lets agents learn programmatically how to authenticate with your protected APIs — endpoints, supported grants, and key material — without hardcoding.",
+      "url": "https://aipush.app/.well-known/agent-skills/oauth-discovery/SKILL.md",
+      "sha256": "ff1fe69fd01e1693a1fd3710cacbdf121418c7bb704c59259e672690c638e369"
+    },
+    {
+      "name": "Publish OAuth Protected Resource Metadata",
+      "slug": "oauth-protected-resource",
+      "type": "agent-skill",
+      "description": "RFC 9728 metadata tells agents which authorization servers can issue tokens for your resource and which scopes exist — so they can obtain the right access token.",
+      "url": "https://aipush.app/.well-known/agent-skills/oauth-protected-resource/SKILL.md",
+      "sha256": "d848a9740ee5090fc61dc72bb30fb852816b7d715f9ccc143292777d996c16e4"
+    },
+    {
+      "name": "Add Open Graph tags",
+      "slug": "opengraph",
+      "type": "agent-skill",
+      "description": "Open Graph metadata controls how pages appear when shared and gives agents a reliable title/image/type to extract.",
+      "url": "https://aipush.app/.well-known/agent-skills/opengraph/SKILL.md",
+      "sha256": "7c7d676d013178b95e3b0a7f9b477908ca6338fb87b7ac0bd5d56179864d3327"
+    },
+    {
+      "name": "Publish a valid robots.txt",
+      "slug": "robots-txt",
+      "type": "agent-skill",
+      "description": "robots.txt is the first file crawlers and AI agents read to learn how they may access your site. A missing or malformed file leaves agents guessing.",
+      "url": "https://aipush.app/.well-known/agent-skills/robots-txt/SKILL.md",
+      "sha256": "a58d80fbb565ca410cc7eeafc528b4321030b725d5965f04d3c4bd2359b78928"
+    },
+    {
+      "name": "Publish and reference a sitemap.xml",
+      "slug": "sitemap",
+      "type": "agent-skill",
+      "description": "A sitemap tells crawlers and agents which URLs are canonical and worth indexing, with freshness signals. It improves coverage and how quickly new content is discovered.",
+      "url": "https://aipush.app/.well-known/agent-skills/sitemap/SKILL.md",
+      "sha256": "897286aac5c61699972769c803de8930edef1b6849aeaffe064a9f8d5b387e55"
+    },
+    {
+      "name": "Enable Universal Commerce Protocol",
+      "slug": "ucp",
+      "type": "agent-skill",
+      "description": "UCP lets agents discover your commerce capabilities, services, and endpoints from a single well-known profile.",
+      "url": "https://aipush.app/.well-known/agent-skills/ucp/SKILL.md",
+      "sha256": "b7cee714a59696cbaeca5d86336f4ed4082604993d1583f5841df328c13d4602"
+    },
+    {
+      "name": "Set viewport and language",
+      "slug": "viewport-lang",
+      "type": "agent-skill",
+      "description": "A viewport meta signals mobile-friendliness; <html lang> declares content language. Both help crawlers, agents, and accessibility tools interpret your page correctly.",
+      "url": "https://aipush.app/.well-known/agent-skills/viewport-lang/SKILL.md",
+      "sha256": "c62f9a1e64580ee55c62dafec5020cca2a768faf161aee3c8b3431559bb74a54"
+    },
+    {
+      "name": "Sign bot requests with Web Bot Auth",
+      "slug": "web-bot-auth",
+      "type": "agent-skill",
+      "description": "If your service makes outbound bot/agent requests, publishing a signing-key directory lets receiving sites verify your requests via HTTP Message Signatures — building trust and avoiding blocks.",
+      "url": "https://aipush.app/.well-known/agent-skills/web-bot-auth/SKILL.md",
+      "sha256": "4eedc6e2a1d06746f993d0e655f0e64658d0cf657f220857a905bb0145c9fb69"
+    },
+    {
+      "name": "Expose tools via WebMCP",
+      "slug": "webmcp",
+      "type": "agent-skill",
+      "description": "WebMCP lets in-browser AI agents call your site's key actions as typed tools — turning a page into an agent-operable surface.",
+      "url": "https://aipush.app/.well-known/agent-skills/webmcp/SKILL.md",
+      "sha256": "25f038dbfbdf781af34e66c5e7c0de51d8d18d180474d69f1775fc9f47c7fc72"
+    },
+    {
+      "name": "Support x402 agent payments",
+      "slug": "x402",
+      "type": "agent-skill",
+      "description": "x402 lets AI agents pay for access to protected routes automatically over HTTP 402 — enabling pay-per-use APIs and content for autonomous agents.",
+      "url": "https://aipush.app/.well-known/agent-skills/x402/SKILL.md",
+      "sha256": "9b8e20928f250b550ace5d70654bcaf867c51050f76272a90bf0e92c77494720"
+    }
+  ]
+}
