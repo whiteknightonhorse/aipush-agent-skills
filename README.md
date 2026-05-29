@@ -7,7 +7,6 @@
 [![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/whiteknightonhorse/aipush-agent-skills/badge)](https://securityscorecards.dev/viewer/?uri=github.com/whiteknightonhorse/aipush-agent-skills)
 [![secrets: gitleaks](https://img.shields.io/badge/secrets-scanned%20by%20gitleaks-brightgreen)](https://github.com/gitleaks/gitleaks)
 [![SAST: Semgrep](https://img.shields.io/badge/SAST-Semgrep-2596be)](https://semgrep.dev)
-[![vulnerabilities: Trivy](https://img.shields.io/badge/vulnerabilities-Trivy-1904da)](https://trivy.dev)
 [![license: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![skills](https://img.shields.io/badge/skills-25-df8e1d)](index.json)
 
