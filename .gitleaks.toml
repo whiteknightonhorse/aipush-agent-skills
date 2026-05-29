@@ -1,0 +1,17 @@
+# gitleaks config for aipush-agent-skills.
+# Uses the default ruleset; allowlists known placeholder example values.
+title = "aipush-agent-skills gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Skill docs contain placeholder example values, never real secrets."
+regexes = [
+  '''YOUR(DOMAIN|SITE|KEY|TOKEN|WALLET)''',
+  '''example\.com''',
+  '''0xYourWallet''',
+]
+paths = [
+  '''index\.json''',
+]
